@@ -1,0 +1,34 @@
+.card{
+  display: block;
+}
+.cardNM{
+  font-size: 25px;
+  font-weight: bolder;
+}
+.cardContent{
+  display: flex;
+  float: left;
+  margin: 0;
+  border: 3px solid lightgrey;
+}
+.cardImg{
+  display: block;
+  float: left;
+  width: fit-content;
+}
+.cardImg img{
+  padding: 10px;
+  width: 50%;
+}
+.cardTextForm{
+  display: block;
+  text-align: center;
+}
+.cardTextTitle{
+  font-size: 20px;
+  font-weight: bolder;
+  color: olive;
+}
+.cardText{
+  font-size: 15px;
+}

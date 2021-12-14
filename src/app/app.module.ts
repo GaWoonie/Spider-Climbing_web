@@ -1,16 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainComponent } from './page/main/main.component';
+import { InstructorComponent } from './page/instructor/instructor.component';
+import { NoticeComponent } from './page/notice/notice.component';
+import { ProgramComponent } from './page/program/program.component';
+import { LocationComponent } from './page/location/location.component';
+import { MainHeaderComponent } from './page/main-header/main-header.component';
+import { MainFooterComponent } from './page/main-footer/main-footer.component';
+import {CommonModule} from "@angular/common";
+import { FacilityComponent } from './page/facility/facility.component';
+import { FaqComponent } from './page/faq/faq.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent,
+    InstructorComponent,
+    NoticeComponent,
+    ProgramComponent,
+    LocationComponent,
+    MainHeaderComponent,
+    MainFooterComponent,
+    FacilityComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

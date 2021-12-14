@@ -1,0 +1,67 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.header{
+  background-color: black;
+  height: 115px;
+  overflow: visible;
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+.mainImg{
+  float: left;
+  padding-top: 5px;
+  padding-left: 8%;
+}
+
+.mainText{
+  float: right;
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding-top: 80px;
+  font-weight: bolder;
+  padding-right: 20px;
+}
+#menu {
+  list-style: none;
+  font:bold 16px "malgun gothic";
+  width:700px;
+  height:50px;
+  color:whitesmoke;
+  line-height: 50px;
+  margin:0 auto;
+  text-align: center;
+  float:right;
+  //padding-top: 60px;
+}
+#menu > ul > li > ul {
+  margin-top: 5px;
+  width:150px;
+  display:none;
+  position: absolute;
+  font-size:14px;
+  background: lightgrey;
+  color: black;
+}
+
+//sidemenu 설정 css
+#menu > ul > li > ul > li:hover {
+  display: block;
+  background: black;
+  color: whitesmoke;
+  transition: ease 1s;
+}
+#menu > ul > li {
+  float:right;
+  width:150px;
+  position:relative;
+  height: 100px;
+  padding-top: 60px;
+}
+#menu > ul > li:hover > ul {
+  display:block;
+}

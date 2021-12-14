@@ -1,0 +1,24 @@
+<div class="header">
+  <span class="mainImg" (click)="moveMain()"><img src="assets/images/logo_Main.png" ></span>
+  <nav id="menu">
+  <ul>
+    <li>
+      <a>소식</a>
+      <ul>
+        <li><a (click)="moveNotice()">공지사항</a></li>
+        <li><a (click)="moveFaq()">F&A</a></li>
+      </ul>
+    </li>
+    <li><a (click)="moveInstructor()">강사소개</a></li>
+    <li><a (click)="moveProgram()">프로그램</a></li>
+
+    <li>
+      <a>스파이더클라이밍</a>
+      <ul>
+        <li><a (click)="moveFacility()">시설안내</a></li>
+        <li><a (click)="moveLocation()">오시는길</a></li>
+      </ul>
+    </li>
+  </ul>
+  </nav>
+  </div>
