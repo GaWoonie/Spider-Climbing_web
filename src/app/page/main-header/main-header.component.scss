@@ -7,8 +7,11 @@
   height: 115px;
   overflow: visible;
   display: block;
-  margin: 0;
+  //margin: 0;
   width: 100%;
+  position:fixed;
+  top:0;
+  left:0;
 }
 
 .mainImg{
@@ -17,20 +20,12 @@
   padding-left: 8%;
 }
 
-.mainText{
-  float: right;
-  display: block;
-  color: white;
-  font-size: 20px;
-  padding-top: 80px;
-  font-weight: bolder;
-  padding-right: 20px;
-}
+
 #menu {
   list-style: none;
   font:bold 16px "malgun gothic";
-  width:700px;
-  height:50px;
+  //width:700px;
+  //height:50px;
   color:whitesmoke;
   line-height: 50px;
   margin:0 auto;
@@ -48,7 +43,6 @@
   color: black;
 }
 
-//sidemenu 설정 css
 #menu > ul > li > ul > li:hover {
   display: block;
   background: black;
@@ -64,4 +58,89 @@
 }
 #menu > ul > li:hover > ul {
   display:block;
+}
+
+//header02적용 CSS
+.subMenuImg #submenu {
+  list-style: none;
+  font:bold 16px "malgun gothic";
+  width:fit-content;
+  color:black;
+  line-height: 30px;
+  float: bottom;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 10px;
+  position: static;
+}
+
+//#submenu > ul > li > ul {
+//  width:150px;
+//  display:none;
+//  position: absolute;
+//  font-size:14px;
+//  background: lightgrey;
+//  color: black;
+//}
+
+#submenu ul{
+  float: right;
+  width: fit-content;
+}
+#submenu li{
+  width: 130px;
+  height: 50px;
+}
+//
+//#submenu > ul > li > ul > li:hover {
+//  display: block;
+//  background: black;
+//  color: whitesmoke;
+//  transition: ease 1s;
+//}
+//#submenu > ul > li {
+//  float:right;
+//  width:150px;
+//  position:relative;
+//}
+//#submenu > ul > li:hover > ul {
+//  display:block;
+//}
+
+
+
+
+.subMenuImg{
+  float: right;
+  padding-top: 5px;
+  padding-right: 8%;
+}
+.subMenuImg input{
+  border: 2px solid whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100px;
+  background-color: black;
+  color: whitesmoke;
+  margin-top: 50%;
+  margin-left: 0;
+}
+
+//미디어쿼리 적용
+@media (min-width: 871px) {
+  #header01{
+    display: block;
+  }
+  #header02{
+    display: none;
+  }
+}
+
+@media (max-width: 870px) {
+  #header01{
+    display: none;
+  }
+  #header02{
+    display: block;
+  }
 }

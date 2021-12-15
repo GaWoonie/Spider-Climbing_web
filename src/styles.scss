@@ -2,7 +2,141 @@
 body{
   margin: 0;
   padding: 0;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
+
 ul li{
   list-style: none;
 }
+@media ( min-width: 1310px)  {
+  body {
+    width: auto;
+  }
+  img{
+    width: auto;
+  }
+
+  header {
+    width: auto;
+  }
+  footer{
+    width: auto;
+  }
+  .container{
+    margin-top: 10%;
+  }
+}
+@media ( min-width: 1000px ) and (max-width: 1310px) {
+  body {
+    width: auto;
+  }
+  img{
+    width: auto;
+  }
+
+  header {
+    width: auto;
+  }
+  footer{
+    width: auto;
+  }
+  .container{
+    margin-top: 15%;
+  }
+}
+@media (max-width: 300px) {
+  body {
+    width: auto;
+  }
+  img{
+    width: auto;
+  }
+
+  header {
+    width: auto;
+  }
+  footer{
+    width: auto;
+  }
+  .container{
+    margin-top: 50%;
+  }
+}
+
+@media (min-width: 301px) and(max-width: 380px) {
+  body {
+    width: auto;
+  }
+  img{
+    width: auto;
+  }
+
+  header {
+    width: auto;
+  }
+  footer{
+    width: auto;
+  }
+  .container{
+    margin-top: 40%;
+  }
+}
+
+@media (min-width:631px )and(max-width: 719px) {
+  body {
+    width: auto;
+  }
+  img{
+    width: auto;
+  }
+
+  header {
+    width: auto;
+  }
+  footer{
+    width: auto;
+  }
+  .container{
+    margin-top: 20%;
+  }
+}
+
+@media (min-width:720px )and(max-width: 999px) {
+  body {
+    width: auto;
+  }
+  img{
+    width: auto;
+  }
+
+  header {
+    width: auto;
+  }
+  footer{
+    width: auto;
+  }
+  .container{
+    margin-top: 18%;
+  }
+}
+@media (min-width: 381px) and (max-width: 630px) {
+  body {
+    width: auto;
+  }
+  img{
+    width: auto;
+  }
+
+  header {
+    width: auto;
+  }
+  footer{
+    width: auto;
+  }
+  .container{
+    margin-top: 30%;
+  }
+}
+
+
