@@ -12,6 +12,7 @@ import { MainFooterComponent } from './page/main-footer/main-footer.component';
 import {CommonModule} from "@angular/common";
 import { FacilityComponent } from './page/facility/facility.component';
 import { FaqComponent } from './page/faq/faq.component';
+import { NoticeDetailComponent } from './page/notice-detail/notice-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FaqComponent } from './page/faq/faq.component';
     MainHeaderComponent,
     MainFooterComponent,
     FacilityComponent,
-    FaqComponent
+    FaqComponent,
+    NoticeDetailComponent
   ],
   imports: [
     BrowserModule,

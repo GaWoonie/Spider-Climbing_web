@@ -1,12 +1,10 @@
-.container01{
+.container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.instructor{
-  border: 1px solid gray;
+p{
   text-align: center;
-  margin-bottom: 10px;
 }

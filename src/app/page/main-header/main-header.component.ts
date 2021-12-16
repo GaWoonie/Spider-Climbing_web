@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
+import {Router,NavigationEnd} from "@angular/router";
 
 @Component({
   selector: 'app-main-header',
@@ -12,6 +12,13 @@ export class MainHeaderComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    //스크롤 top으로 이동하는 함수
+    this.router.events.subscribe((event) => {
+      if (!(event instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 
   openMenu() {

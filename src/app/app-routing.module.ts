@@ -7,6 +7,7 @@ import { InstructorComponent } from "./page/instructor/instructor.component";
 import { NoticeComponent } from "./page/notice/notice.component";
 import { FacilityComponent} from "./page/facility/facility.component";
 import { FaqComponent } from "./page/faq/faq.component";
+import { NoticeDetailComponent } from "./page/notice-detail/notice-detail.component";
 import { MainHeaderComponent } from "./page/main-header/main-header.component";
 import { MainFooterComponent } from "./page/main-footer/main-footer.component";
 
@@ -14,11 +15,12 @@ const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full'},
   { path: 'main', component: MainComponent},
   { path: 'main/location', component: LocationComponent},
-  { path: 'main/notice', component: NoticeComponent},
   { path: 'main/program', component: ProgramComponent},
   { path: 'main/instructor', component: InstructorComponent},
   { path: 'main/facility', component: FacilityComponent},
   { path: 'main/faqService', component: FaqComponent},
+  { path: 'main/notice', component: NoticeComponent},
+  { path: 'main/notice/detail', component: NoticeDetailComponent},
 ];
 
 @NgModule({

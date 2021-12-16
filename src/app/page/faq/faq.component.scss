@@ -1,0 +1,39 @@
+.board{
+  width: 100%;
+  height: fit-content;
+}
+
+table.type01 { border-collapse: collapse; text-align: center; line-height: 1.5; margin : 20px 10px; width: 80%}
+table.type01 th { width: 250px; padding: 10px; font-weight: bold; vertical-align: top;}
+table.type01 td { width: 250px; padding: 10px; vertical-align: top;  cursor:pointer; }
+table.type01 tr { width: 250px; padding: 10px; vertical-align: top;  cursor:pointer; border-bottom: 1px solid; }
+table.type01.end { width: 250px; padding: 10px; vertical-align: top;  cursor:pointer }
+//.board{ border-bottom: 1px solid }
+table.type01 thead { border-bottom: 3px dashed }
+
+
+.button{
+  border: none;
+  display: inline-block;
+  flex-basis: 100%;
+  text-align: right;
+  margin-top: 1.5rem;
+  margin-left: 77%;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  background: lightblue;
+  //float: right;
+}
+
+.search{
+  margin-right: 10px;
+  border: 3px solid lightblue;
+  text-align: center;
+}
+.re{
+  background-color: orange;
+  color: aliceblue;
+  float: right;
+}
+
+

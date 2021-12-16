@@ -60,8 +60,55 @@
   display:block;
 }
 
+//하단메뉴
+#menu04 {
+  list-style: none;
+  font:bold 16px "malgun gothic";
+  //width:700px;
+  //height:50px;
+  color:whitesmoke;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+}
+#menu04 > ul > li > ul {
+  margin-top: 5px;
+  width:100%;
+  display:none;
+  //position: absolute;
+  font-size:14px;
+  background: lightgrey;
+  color: black;
+}
+
+#menu04 > ul > li > ul > li:hover {
+  display: block;
+  background: black;
+  color: whitesmoke;
+  transition: ease 1s;
+}
+#menu04 > ul > li {
+  float:left;
+  width: fit-content;
+  padding-top: 100px;
+  background-color: black;
+
+
+}
+#menu04 > ul > li:hover > ul {
+  display:block;
+}
+
+
+
+
+
+
+
+
 //header02적용 CSS
-.subMenuImg #submenu {
+ #submenu {
   list-style: none;
   font:bold 16px "malgun gothic";
   width:fit-content;
@@ -69,9 +116,10 @@
   line-height: 30px;
   float: bottom;
   text-align: center;
-  padding-top: 30px;
+  //padding-top: 30px;
   padding-left: 10px;
   position: static;
+
 }
 
 //#submenu > ul > li > ul {
@@ -85,10 +133,17 @@
 
 #submenu ul{
   float: right;
-  width: fit-content;
+  //width: fit-content;
+  background-color: black;
+  opacity: 0.4;
+  color: whitesmoke;
+  text-align: center;
+  width: 150px;
+  position: fixed;
+  top: 15.5%;
+  right: 5%;
 }
 #submenu li{
-  width: 130px;
   height: 50px;
 }
 //
@@ -110,37 +165,71 @@
 
 
 
-.subMenuImg{
+#menu02{
   float: right;
   padding-top: 5px;
   padding-right: 8%;
+  height: 115px;
+  max-width: 162px;
+  //position: fixed;
+  //right: 10%;
+  //bottom: 10%;
 }
-.subMenuImg input{
+#menu02 input{
   border: 2px solid whitesmoke;
   font-weight: bold;
   font-size: 20px;
   width: 100px;
   background-color: black;
   color: whitesmoke;
-  margin-top: 50%;
-  margin-left: 0;
+  position: fixed;
+  top: 10%;
+  left: 75%;
+  //margin-top: 50%;
+  //margin-left: 0;
 }
+#menu02 nav{
+ padding-top: 68%;
+}
+
 
 //미디어쿼리 적용
 @media (min-width: 871px) {
-  #header01{
+  #menu01{
     display: block;
   }
-  #header02{
+  #menu02{
     display: none;
   }
 }
 
 @media (max-width: 870px) {
-  #header01{
-    display: none;
-  }
-  #header02{
+ #menu01{
+   display: none;
+ }
+  #menu02{
     display: block;
   }
 }
+
+@media (min-width: 760px) and (max-width: 870px) {
+  #submenu ul {
+    position: fixed;
+    top: 15.5%;
+    right: 10%;
+  }
+}
+@media (min-width:382px) and (max-width: 600px) {
+  #submenu ul {
+    position: fixed;
+    top: 15.5%;
+    right: 0%;
+  }
+}
+@media (max-width: 381px) {
+  #menu02 imput {
+    margin-right: 20%;
+  }
+}
+
+
