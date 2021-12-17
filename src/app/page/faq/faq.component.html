@@ -1,5 +1,5 @@
 <app-main-header></app-main-header>
-<div class="container">
+<div class="container" (contextmenu)="false" (selectstart)="false" (dragstart)="false" (keydown)="false">
   <p> notice-detail 컴포넌트 레이아웃 참고하여 만들어도 괜찮을 듯</p>
   <div class="board">
     <div class="searchLayout">
@@ -40,7 +40,7 @@
         </tr>
       </tbody>
     </table>
-    <input type="button" class="button" value="작성">
+   <a href="http://localhost:4200/main/notice/detail"> <input type="button" class="button" value="작성"></a>
     <p> 하단에 페이지네이션 구현 필요 할 듯.</p>
     <p> OR, 비블럭 페이지 참고하여 필요한 Q&A만 목록으로 정리하여 나열 (목록 추가 필요)</p>
     <p> Q1. 이용시간이 어떻게 되나요?</p>

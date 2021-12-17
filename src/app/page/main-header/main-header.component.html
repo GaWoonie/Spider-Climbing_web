@@ -1,98 +1,51 @@
 <div class="header" id="header01">
-  <div class="mainImg" (click)="moveMain()"><img src="assets/images/logo_Main.png" ></div>
-  <div id="menu01">
-  <nav id="menu">
-  <ul>
-    <li>
-      <a>소식</a>
-      <ul>
-        <li><a (click)="moveNotice()">공지사항</a></li>
-        <li><a (click)="moveFaq()">F&A</a></li>
-      </ul>
-    </li>
-    <li><a (click)="moveInstructor()">강사소개</a></li>
-    <li><a (click)="moveProgram()">프로그램</a></li>
-
-    <li>
-      <a>스파이더클라이밍</a>
-      <ul>
-        <li><a (click)="moveFacility()">시설안내</a></li>
-        <li><a (click)="moveLocation()">오시는길</a></li>
-      </ul>
-    </li>
-  </ul>
-  </nav>
+  <div class="mainImg" (click)="moveMain()">
+    <img src="assets/images/logo_Main.png" >
   </div>
-<!--  <div id="menu03">-->
-<!--    <nav id="menu04">-->
-<!--      <ul>-->
-<!--        <li>-->
-<!--          <a>소식</a>-->
-<!--          <ul>-->
-<!--            <li><a (click)="moveNotice()">공지사항</a></li>-->
-<!--            <li><a (click)="moveFaq()">F&A</a></li>-->
-<!--          </ul>-->
-<!--        </li>-->
-<!--        <li><a (click)="moveInstructor()">강사소개</a></li>-->
-<!--        <li><a (click)="moveProgram()">프로그램</a></li>-->
-
-<!--        <li>-->
-<!--          <a>스파이더클라이밍</a>-->
-<!--          <ul>-->
-<!--            <li><a (click)="moveFacility()">시설안내</a></li>-->
-<!--            <li><a (click)="moveLocation()">오시는길</a></li>-->
-<!--          </ul>-->
-<!--        </li>-->
-<!--      </ul>-->
-<!--    </nav>-->
-<!--  </div>-->
-  <div id="menu02">
-    <input type="button" value="MENU" (click)="openMenu()">
-  <div id="submenu" *ngIf="submenu">
+<!--  넓은 화면에서 보여지는 메뉴-->
+  <div class="Menu">
     <ul>
-            <li>
-              <a>스파이더클라이밍</a>
-<!--                      <ul>-->
-<!--                        <li><a (click)="moveFacility()">시설안내</a></li>-->
-<!--                        <li><a (click)="moveLocation()">오시는길</a></li>-->
-<!--                      </ul>-->
-            </li>
-            <li><a (click)="moveProgram()">프로그램</a></li>
-            <li><a (click)="moveInstructor()">강사소개</a></li>
-            <li>
-              <a>소식</a>
-<!--                      <ul>-->
-<!--                        <li><a (click)="moveNotice()">공지사항</a></li>-->
-<!--                        <li><a (click)="moveFaq()">F&A</a></li>-->
-<!--                      </ul>-->
-            </li>
-          </ul>
-  </div>
-  </div>
-  </div>
+      <li style="cursor: pointer">
+        <a>소식</a>
+        <ul>
+          <li style="cursor: pointer" (click)="moveNotice()"><a>공지사항</a></li>
+          <li style="cursor: pointer" (click)="moveFaq()"><a>F&A</a></li>
+        </ul>
+      </li>
+      <li style="cursor: pointer"><a (click)="moveInstructor()">강사소개</a></li>
+      <li style="cursor: pointer"><a (click)="moveProgram()">프로그램</a></li>
 
-<!--<header class="header" id="header02">-->
-<!--  <div class="mainImg" (click)="moveMain()"><img src="assets/images/logo_Main.png"></div>-->
-<!--  <div class="subMenuImg"><input type="button" value="MENU" (click)="openMenu()">-->
-<!--  <nav id="submenu" *ngIf="submenu">-->
-<!--    <ul>-->
-<!--      <li>-->
-<!--        <a>스파이더클라이밍</a>-->
-<!--        &lt;!&ndash;        <ul>&ndash;&gt;-->
-<!--        &lt;!&ndash;          <li><a (click)="moveFacility()">시설안내</a></li>&ndash;&gt;-->
-<!--        &lt;!&ndash;          <li><a (click)="moveLocation()">오시는길</a></li>&ndash;&gt;-->
-<!--        &lt;!&ndash;        </ul>&ndash;&gt;-->
-<!--      </li>-->
-<!--      <li><a (click)="moveProgram()">프로그램</a></li>-->
-<!--      <li><a (click)="moveInstructor()">강사소개</a></li>-->
-<!--      <li>-->
-<!--        <a>소식</a>-->
-<!--        &lt;!&ndash;        <ul>&ndash;&gt;-->
-<!--        &lt;!&ndash;          <li><a (click)="moveNotice()">공지사항</a></li>&ndash;&gt;-->
-<!--        &lt;!&ndash;          <li><a (click)="moveFaq()">F&A</a></li>&ndash;&gt;-->
-<!--        &lt;!&ndash;        </ul>&ndash;&gt;-->
-<!--      </li>-->
-<!--    </ul>-->
-<!--  </nav>-->
-<!--  </div>-->
-<!--</header>-->
+      <li style="cursor: pointer">
+        <a>스파이더클라이밍</a>
+        <ul>
+          <li style="cursor: pointer"><a (click)="moveFacility()">시설안내</a></li>
+          <li style="cursor: pointer"><a (click)="moveLocation()">오시는길</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- max-width:890px일 때 보여지는 버튼메뉴 -->
+  <div class="rowMenu">
+    <div class="colMenu">
+      <input type="button" value="MENU" style="cursor: pointer;" (click)="openMenu()">
+      <ul *ngIf="submenu">
+        <li>
+          <a style="cursor: pointer;">스파이더클라이밍</a>
+          <ul>
+            <li><a style="cursor: pointer;" (click)="moveFacility()"> ㆍ 시설안내</a></li>
+            <li><a style="cursor: pointer;" (click)="moveLocation()"> ㆍ 오시는길</a></li>
+          </ul>
+        </li>
+        <li><a style="cursor: pointer;" (click)="moveProgram()">프로그램</a></li>
+        <li><a style="cursor: pointer;" (click)="moveInstructor()">강사소개</a></li>
+        <li>
+          <a style="cursor: pointer;">소식</a>
+          <ul>
+            <li><a style="cursor: pointer;" (click)="moveNotice()"> ㆍ 공지사항</a></li>
+            <li><a style="cursor: pointer;" (click)="moveFaq()"> ㆍ F&A &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

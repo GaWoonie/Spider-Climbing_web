@@ -1,6 +1,30 @@
 <app-main-header></app-main-header>
-<div class="container">
+<div class="container" (contextmenu)="false" (selectstart)="false" (dragstart)="false" (keydown)="false">
   <p>main</p>
+  <div class="ceo">
+    <div class="ceoLeft">
+    <h2> 박희용 (Park Hee Young)</h2>
+    <img src="assets/images/park.png" style="max-width:98%; max-height:75%; border: 2px solid; ">
+    </div>
+    <div class="ceoRight">
+      <div class="ceoText">
+      <span> Career</span>
+      <p>1998년 클라이밍 입문 5.14a 등반 </p>
+      <p> - 2004년 ~ 스파이더 실내암벽 운영 </p>
+      <p> - 대한산악연맹 1급 루트세터 </p>
+      <p> - 대한체육회 전문 스포츠 지도사 1급 (등산) </p>
+      <p> - 2011,2013,2017년 아이스 클라이밍 월드챔피언</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
   <div class="location">
     <span>
       <img src="assets/images/locationMap.png" alt="location" style="max-width: 90%">

@@ -68,7 +68,7 @@ ul li{
 
 
 
-@media (min-width: 301px) and(max-width: 380px) {
+@media (max-width: 499px) {
   body {
     width: auto;
   }
@@ -87,7 +87,7 @@ ul li{
   }
 }
 
-@media (min-width: 381px) and (max-width: 630px) {
+@media (min-width: 500px) and (max-width: 630px) {
   body {
     width: auto;
   }

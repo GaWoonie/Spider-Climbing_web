@@ -1,5 +1,12 @@
+<head>
+  <script type="text/javascript">
+    document.oncontextmenu = function (){return false;}
+  </script>
+  <script src="../../../test.ts"></script>
+</head>
+
 <app-main-header></app-main-header>
-<div class="container">
+<div class="container" (contextmenu)="false" (selectstart)="false" (dragstart)="false" (keydown)="false">
 <!--  <p> 젤 작은 사이즈 사진이 1207*707 px</p>-->
   <div class="wallImg">
     <div class="rootmap">

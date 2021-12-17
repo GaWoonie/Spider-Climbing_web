@@ -8,3 +8,16 @@
 .location p{
   max-width: 80%;
 }
+
+.ceo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.ceoText{
+  margin: 0;
+  padding: 0;
+}

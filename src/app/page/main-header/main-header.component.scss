@@ -1,13 +1,13 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 .header{
   background-color: black;
   height: 115px;
   overflow: visible;
-  display: block;
-  //margin: 0;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   position:fixed;
   top:0;
@@ -15,221 +15,150 @@
 }
 
 .mainImg{
+  width: 20%;
   float: left;
   padding-top: 5px;
   padding-left: 8%;
 }
 
-
-#menu {
+/* 작은화면(버튼) css */
+.rowMenu{
+  width: 80%;
   list-style: none;
   font:bold 16px "malgun gothic";
-  //width:700px;
-  //height:50px;
-  color:whitesmoke;
-  line-height: 50px;
   margin:0 auto;
   text-align: center;
   float:right;
-  //padding-top: 60px;
-}
-#menu > ul > li > ul {
-  margin-top: 5px;
-  width:150px;
-  display:none;
-  position: absolute;
-  font-size:14px;
-  background: lightgrey;
-  color: black;
 }
 
-#menu > ul > li > ul > li:hover {
-  display: block;
-  background: black;
-  color: whitesmoke;
-  transition: ease 1s;
-}
-#menu > ul > li {
-  float:right;
-  width:150px;
-  position:relative;
-  height: 100px;
-  padding-top: 60px;
-}
-#menu > ul > li:hover > ul {
-  display:block;
+.colMenu{
+  width: 150px;
+  position: fixed;
+  top:55px;
+  right: 45px;
+  height: auto;
 }
 
-//하단메뉴
-#menu04 {
-  list-style: none;
-  font:bold 16px "malgun gothic";
-  //width:700px;
-  //height:50px;
-  color:whitesmoke;
-  margin: 0;
-  line-height: 50px;
-  text-align: center;
-  width: 100%;
-}
-#menu04 > ul > li > ul {
-  margin-top: 5px;
-  width:100%;
-  display:none;
-  //position: absolute;
-  font-size:14px;
-  background: lightgrey;
-  color: black;
-}
-
-#menu04 > ul > li > ul > li:hover {
-  display: block;
-  background: black;
-  color: whitesmoke;
-  transition: ease 1s;
-}
-#menu04 > ul > li {
-  float:left;
-  width: fit-content;
-  padding-top: 100px;
+.rowMenu input{
+  border: 2px solid whitesmoke;
+  font-weight: bold;
+  font-size: 20px;
   background-color: black;
-
-
-}
-#menu04 > ul > li:hover > ul {
-  display:block;
+  color: whitesmoke;
+  width: 80px;
 }
 
-
-
-
-
-
-
-
-//header02적용 CSS
- #submenu {
+div.colMenu > ul{
   list-style: none;
-  font:bold 16px "malgun gothic";
-  width:fit-content;
-  color:black;
-  line-height: 30px;
-  float: bottom;
-  text-align: center;
-  //padding-top: 30px;
-  padding-left: 10px;
-  position: static;
+  width: 150px;
+  line-height: 40px;
+  position: fixed;
+  top:115px;
+  right: 45px;
+  margin: 0;
+  padding: 0;
 
 }
 
-//#submenu > ul > li > ul {
-//  width:150px;
-//  display:none;
-//  position: absolute;
-//  font-size:14px;
-//  background: lightgrey;
-//  color: black;
-//}
-
-#submenu ul{
-  float: right;
-  //width: fit-content;
+div.colMenu > ul > li {
   background-color: black;
   opacity: 0.4;
   color: whitesmoke;
   text-align: center;
-  width: 150px;
-  position: fixed;
-  top: 15.5%;
-  right: 5%;
 }
-#submenu li{
-  height: 50px;
-}
-//
-//#submenu > ul > li > ul > li:hover {
-//  display: block;
-//  background: black;
-//  color: whitesmoke;
-//  transition: ease 1s;
-//}
-//#submenu > ul > li {
-//  float:right;
-//  width:150px;
-//  position:relative;
-//}
-//#submenu > ul > li:hover > ul {
-//  display:block;
-//}
-
-
-
-
-#menu02{
-  float: right;
-  padding-top: 5px;
-  padding-right: 8%;
-  height: 115px;
-  max-width: 162px;
-  //position: fixed;
-  //right: 10%;
-  //bottom: 10%;
-}
-#menu02 input{
-  border: 2px solid whitesmoke;
-  font-weight: bold;
-  font-size: 20px;
-  width: 100px;
-  background-color: black;
+div.colMenu > ul > li:hover  {
+  background: black;
+  opacity: 1;
   color: whitesmoke;
-  position: fixed;
-  top: 10%;
-  left: 75%;
-  //margin-top: 50%;
-  //margin-left: 0;
+  transition: ease 1s;
 }
-#menu02 nav{
- padding-top: 68%;
+div.colMenu > ul > li > ul {
+  display: none;
+}
+div.colMenu > ul > li:hover > ul {
+  display: block;
+  list-style: none;
+  text-align: center;
 }
 
+div.colMenu > ul > li:hover > ul > li {
+  background-color: black;
+  opacity: 0.4;
+  color: whitesmoke;
+  text-align: center;
+}
 
-//미디어쿼리 적용
-@media (min-width: 871px) {
-  #menu01{
+div.colMenu > ul > li:hover > ul > li:hover {
+  background-color: black;
+  opacity: 1;
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* 큰화면 css */
+/* 1열 ul/li */
+.Menu > ul{
+  height: 115px;
+  margin: 0;
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: bold;
+}
+.Menu > ul > li {
+  list-style: none;
+  width:150px;
+  float: right;
+  height: 130px;
+  position:relative;
+  text-align: center;
+  margin-top: 70px
+}
+
+/* 1열 li에 마우스 올리면 보이도록 설정 */
+.Menu > ul > li:hover > ul{
+  padding: 0;
+  margin-top: 23px;
+  display: block;
+}
+
+/* 2열 ul,li */
+.Menu > ul > li > ul{
+  display: none;
+}
+
+.Menu > ul > li > ul> li {
+  list-style: none;
+  line-height: 30px;
+  font-size:14px;
+  text-align: center;
+  background: lightgrey;
+  color: black;
+  width: 150px;
+  position: relative;
+}
+/* 2열 li에 마우스오버시 색이 바뀌도록 설정 */
+.Menu > ul > li > ul > li:hover {
+  display: block;
+  background: black;
+  color: whitesmoke;
+  transition: ease 1s;
+  opacity: 0.9;
+}
+
+@media (max-width : 889px) {
+  .Menu {
+    display: none;
+  }
+  .rowMenu{
+    display:block;
+  }
+}
+
+@media (min-width : 890px) {
+  .Menu{
     display: block;
   }
-  #menu02{
+  .rowMenu{
     display: none;
   }
 }
-
-@media (max-width: 870px) {
- #menu01{
-   display: none;
- }
-  #menu02{
-    display: block;
-  }
-}
-
-@media (min-width: 760px) and (max-width: 870px) {
-  #submenu ul {
-    position: fixed;
-    top: 15.5%;
-    right: 10%;
-  }
-}
-@media (min-width:382px) and (max-width: 600px) {
-  #submenu ul {
-    position: fixed;
-    top: 15.5%;
-    right: 0%;
-  }
-}
-@media (max-width: 381px) {
-  #menu02 imput {
-    margin-right: 20%;
-  }
-}
-
-
