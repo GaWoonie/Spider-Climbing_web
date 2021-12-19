@@ -10,10 +10,18 @@
         <ul>
           <li style="cursor: pointer" (click)="moveNotice()"><a>공지사항</a></li>
           <li style="cursor: pointer" (click)="moveFaq()"><a>F&A</a></li>
+          <li style="cursor: pointer" (click)="moveGallery()"><a>갤러리</a></li>
         </ul>
       </li>
       <li style="cursor: pointer"><a (click)="moveInstructor()">강사소개</a></li>
-      <li style="cursor: pointer"><a (click)="moveProgram()">프로그램</a></li>
+      <li style="cursor: pointer">
+        <a (click)="moveProgram()">프로그램</a>
+        <ul>
+          <li><a style="cursor: pointer;">평일반</a></li>
+          <li><a style="cursor: pointer;">주말반</a></li>
+          <li><a style="cursor: pointer;">개인레슨</a></li>
+        </ul>
+      </li>
 
       <li style="cursor: pointer">
         <a>스파이더클라이밍</a>
@@ -36,13 +44,21 @@
             <li><a style="cursor: pointer;" (click)="moveLocation()"> ㆍ 오시는길</a></li>
           </ul>
         </li>
-        <li><a style="cursor: pointer;" (click)="moveProgram()">프로그램</a></li>
+        <li>
+          <a style="cursor: pointer;" (click)="moveProgram()">프로그램</a>
+          <ul>
+            <li><a style="cursor: pointer;"> ㆍ 평일반</a></li>
+            <li><a style="cursor: pointer;"> ㆍ 주말반</a></li>
+            <li><a style="cursor: pointer;"> ㆍ개인레슨</a></li>
+          </ul>
+        </li>
         <li><a style="cursor: pointer;" (click)="moveInstructor()">강사소개</a></li>
         <li>
           <a style="cursor: pointer;">소식</a>
           <ul>
             <li><a style="cursor: pointer;" (click)="moveNotice()"> ㆍ 공지사항</a></li>
             <li><a style="cursor: pointer;" (click)="moveFaq()"> ㆍ F&A &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            <li><a style="cursor: pointer;" (click)="moveGallery()"> ㆍ 갤러리&nbsp;&nbsp;&nbsp;</a></li>
           </ul>
         </li>
       </ul>

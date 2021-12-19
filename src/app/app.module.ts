@@ -13,6 +13,7 @@ import {CommonModule} from "@angular/common";
 import { FacilityComponent } from './page/facility/facility.component';
 import { FaqComponent } from './page/faq/faq.component';
 import { NoticeDetailComponent } from './page/notice-detail/notice-detail.component';
+import { GalleryComponent } from './page/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NoticeDetailComponent } from './page/notice-detail/notice-detail.compon
     MainFooterComponent,
     FacilityComponent,
     FaqComponent,
-    NoticeDetailComponent
+    NoticeDetailComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

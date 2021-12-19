@@ -21,3 +21,138 @@
   margin: 0;
   padding: 0;
 }
+
+.main01-title{
+display: inline-block;
+
+  width: 75%;
+  border-bottom: 2px dashed lightgray;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.main01-content{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.main02-Img{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: auto;
+  justify-content:center;
+}
+
+.main02-title{
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: gray;
+}
+.main02-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.main02-content div{
+  //width: 50%;
+  //height: auto;
+
+}
+
+.main02-content img{
+  width: fit-content;
+  height: auto;
+}
+
+.main03{
+  text-align: center;
+}
+
+.main03-title{
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: gray;
+}
+.main04-title{
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: gray;
+}
+.main04-content{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.kinds{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+.text{
+  width: 30%;
+}
+.Img{
+  width: fit-content;
+}
+// 강사 모달 css
+.modal{
+  //position: absolute !important;
+  //top: 50%;
+  //left:50%;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  display: block !important;
+
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  position: fixed !important;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-content{
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+
+  width: 50% !important;
+  height: fit-content !important;
+
+  padding: 40px !important;
+
+  text-align: center !important;
+
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15) !important;
+
+  transform: translateX(-50%) translateY(-50%) !important;
+}
+
+@media (max-width: 1285px) {
+  .text{
+    width: 100%;
+  }
+}

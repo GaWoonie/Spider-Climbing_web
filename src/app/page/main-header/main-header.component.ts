@@ -46,10 +46,12 @@ export class MainHeaderComponent implements OnInit {
     this.router.navigate(['main/program'])
   }
   moveNotice() {
-    this.router.navigate(['main/notice'])
+    this.router.navigate(['main/news/notice'])
   }
   moveFaq() {
-    this.router.navigate(['main/faqService'])
+    this.router.navigate(['main/news/faqService'])
   }
-
+  moveGallery() {
+    this.router.navigate(['main/news/gallery'])
+  }
 }
