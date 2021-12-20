@@ -1,0 +1,11 @@
+.gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery div{
+  max-width:50% ;
+  height: auto;
+}

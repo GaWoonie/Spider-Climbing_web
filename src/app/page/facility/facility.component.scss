@@ -1,8 +1,69 @@
-img{
-  max-width: 99%;
+//img{
+//  max-width: 80%;
+//  height: auto;
+//}
+
+.wall-title p{
+  font-size: 30px;
+  font-weight: bold;
 }
 
-p{
-  font-size: 25px;
+//.wall{
+//  width: 100%;
+//  display: flex;
+//  flex-direction: row;
+//  flex-wrap: wrap;
+//  justify-content: center;
+//}
+
+.wall div{
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.wall{
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
   font-weight: bold;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.wall img{
+    width: 100%;
+    height: auto;
+}
+
+.rootMap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.rootMap-text {
+  width: fit-content;
+  display: inline-block;
+  text-align: left;
+  //width: 100%;
+}
+
+@media (min-width: 1050px) {
+  .wall img{
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .rootMap-text{
+    max-width: 80%;
+  }
 }

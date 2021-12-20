@@ -54,4 +54,13 @@ export class MainHeaderComponent implements OnInit {
   moveGallery() {
     this.router.navigate(['main/news/gallery'])
   }
+  movePersonal() {
+    this.router.navigate(['main/program/personal'])
+  }
+  moveWeekday() {
+    this.router.navigate(['main/program/weekday'])
+  }
+  moveWeekend(){
+    this.router.navigate(['main/program/weekend'])
+  }
 }

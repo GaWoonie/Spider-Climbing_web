@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  position:fixed;
+  position:fixed !important;
   top:0;
   left:0;
 }
@@ -108,7 +108,7 @@ div.colMenu > ul > li:hover > ul > li:hover {
   list-style: none;
   width:150px;
   float: right;
-  height: 130px;
+  height: fit-content;
   position:relative;
   text-align: center;
   margin-top: 70px

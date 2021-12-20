@@ -1,0 +1,83 @@
+<app-main-header></app-main-header>
+<div class="container">
+    <div class="weekend-title">
+      <p> 개인 강습 프로그램</p>
+    </div>
+    <div class="weekend01">
+      <div class="weekend01-title">
+        INSTRUCTOR
+      </div>
+      <div class="weekend01-content">
+        <div class="weekend01-content1">
+          <img src="assets/images/park@1.png" alt="박희용 강사" style="max-width: 100%; height: auto;">
+          <p style="color: #ffc349; font-size: 30px; font-weight: bolder;">박희용 강사님</p>
+          <div>
+            <p> 1998년 클라이밍 입문 5.14a 등반</p>
+            <p> 2011,2013,2017년 아이스클라이밍 월드 챔피언</p>
+            <p> 2020 ~ 대한민국 클라이밍 국가대표 코치</p>
+            <p> 2010년 대한민국 산악대상</p>
+            <p> 대한체육회 전문스포츠지도사 1급 등산</p>
+            <p> 대한산악연맹 1급 루트세터</p>
+            <p> 2004~ 현 스파이더 실내암벽 운영</p>
+          </div>
+        </div>
+        <div class="weekend01-content2">
+          <img src="assets/images/hong.png" alt="홍신영 강사" style="max-width: 100%; height: auto;">
+          <p style="color: #ffc349; font-size: 30px; font-weight: bolder;">홍신영 강사님</p>
+          <div>
+            <p> 2003년 클라이밍 입문</p>
+            <p> 2006년 유럽 3개국 클라이밍 투어</p>
+            <p> 최고난이도 5.12c 등반</p>
+            <p> 대한체육회 생활스포츠지도사 2급 등산</p>
+            <p> 2009~ 현 스파이더 실내암벽 강사</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="weekend02">
+      <div class="weekend02-title">
+        PROGRAM
+      </div>
+      <div class="weekend02-content">
+        <p style="font-size: 20px; font-weight: bold"> 더욱 체계적인 커리큘럼이 필요하다면?</p>
+        <p style="font-size: 20px; font-weight: bold"> 약점을 집중적으로 보완하고 싶다면?</p>
+        <p style="font-size: 20px; font-weight: bold"> 월드챔피언에게 <span style="color: red">개인강습</span>을 신청하세요!</p>
+        <p style="font-size: 16px; font-weight: bold; color: dimgray"> 초보자,숙련자 관계없이 코칭이 가능한 1:1 개인강습 입니다. </p>
+        <p> ////하단에 강습 사진 등 추가 하면 좋을 듯. </p>
+      </div>
+      <div class="faq">
+        <p style="font-size: 50px; font-weight: bolder; color: gray; padding-bottom: 30px;"> Q&A</p>
+        <div>
+          <div class="question">
+            <p style="color: #b89a00" (click)="openAnswer1()">Q1. 개인강습과 그룹강습의 차이가 무엇인가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
+          </div>
+          <div class="answer" *ngIf="Q1">
+            <p> A. 그룹강습은 최대정원 12명의 강습생들이 함께 운동하는 것 입니다.
+              <br> 여러명의 강습생과 1명의 강사로 진행되는 그룹강습과는 다르게
+              <br> 1:1 마킹으로 진행되어, 보다 집중적인 코칭이 가능합니다.</p>
+          </div>
+        </div>
+        <div>
+          <div class="question">
+            <p style="color: #6b9700"  (click)="openAnswer2()">Q2. 강습 시간대는 어떻게 되나요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
+          </div>
+          <div class="answer" *ngIf="Q2">
+            <p>A. 개인 강습은 정해진 시간대에 운영되고 있지 않습니다.
+              <br>개인 강습을 신청하신 수강생과 전담 코치의 시간 협의를 통해 진행됩니다.
+              <br> 강습 시간은 1시간 30분이고 주 2회, 1:1로 진행됩니다. </p>
+          </div>
+        </div>
+        <div>
+          <div class="question">
+            <p style="color: #00555c" (click)="openAnswer3()">Q3. 커리큘럼은 어떤가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px" ></p>
+          </div>
+          <div class="answer" *ngIf="Q3">
+            <p>A.<span style="color: red">개인강습</span>은 1:1 맞춤 프로그램 입니다.
+              <br> 개인의 역량과 신체적 조건을 파악하여 보다 쳬계적으로 지도합니다.
+              <br> 정해진 커리큘럼에 맞춰 진행하지 않고, 개인의 운동수행능력을 고려하여 커리큘럼을 계획합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<app-main-footer></app-main-footer>

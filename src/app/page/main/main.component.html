@@ -13,7 +13,7 @@
 <!--  강사 소개-->
   <div class="main02">
    <div class="main02-title">
-     <p>SPIDER
+     <p>SPIDER's
      <br>INSTRUCTOR</p>
    </div>
     <div class="main02-content">
@@ -73,6 +73,7 @@
           </div>
         </div>
       </div>
+      <br>
       <div class="lee">
         <img src="assets/images/lee.jpg" (click)="clickLee()">
         <p> 이재형 강사</p>
@@ -96,7 +97,7 @@
         <div class="modal-content">
           <p><img src="assets/icon/icon_x.png" alt="Close" style="float: right; max-width: 100%; height: auto" (click)="closeModal()"></p>
           <h2> 오혜림 강사 </h2>
-          <img src="assets/images/oh.jpg" alt="오혜림 강사" style="max-width: 100%; height: auto">
+          <img src="assets/images/oh.jpg" alt="오혜림 강사" style="max-width: 100%; height: auto;">
           <div>
             <p>2015.10 클라이밍 입문</p>
             <p>2016.10 노스페이스 대회 출전</p>
@@ -107,23 +108,7 @@
       </div>
     </div>
   </div>
-<!--  오시는 길-->
-  <div class="main03">
-    <div class="main03-title">
-    <p> 오시는 길</p>
-    </div>
-    <div class="main03-content">
-    <span>
-      <img src="assets/images/locationMap.png" alt="location" style="max-width: 90%">
-    </span>
-    <h3>성남시 중원구 하대원동 101-28 남영빌딩 4층</h3>
-    <span>
-      <img src="assets/images/mainLocation.png">
-      <p><b>버스 =></b> 31-2 | 31-3 | 57 | 3-3 | 88번 승차 후 <b style="color: red"> 성남동성당</b>에서 하차</p>
-    </span>
-    </div>
-  </div>
-<!--    클라이밍 설명-->
+  <!--    클라이밍 설명-->
   <div class="main04">
     <div class="main04-title">
       <p> About Climbing</p>
@@ -131,14 +116,14 @@
     <div class="main04-content">
 
       <p><span style="font-weight: bolder; font-size: 23px; color: orangered; ">클라이밍이란, </span>주어진 홀드를 활용하여 완등을 하는 도전적 스포츠 입니다.
-      <br> 실내·실외 구분없이 누구나 도전하실 수 있습니다!</p>
-      <hr>
+        <br> 실내·실외 구분없이 누구나 도전하실 수 있습니다!</p>
+      <hr style="width: 75%">
       <div class="kinds">
         <div class="text">
           <p style="font-size: 30px; color: darkgray; font-weight: bolder"> 리드(Lead) </p>
           <p> 안전장비를 착용하고, 높은 벽을 오릅니다.
-          <br> 정해진 시간 내에 제일 높이 오르는 것으로,
-          <br> 높이에 따라 순위를 나누는 종목입니다.</p>
+            <br> 정해진 시간 내에 제일 높이 오르는 것으로,
+            <br> 높이에 따라 순위를 나누는 종목입니다.</p>
         </div>
         <div class="Img">
           <img src="assets/images/leading.jpg">
@@ -161,7 +146,7 @@
           <p style="font-size: 30px; color: darkgray; font-weight: bolder"> 스피드(Speed) </p>
           <p> 안전장비를 착용하고, 15m의 수직 벽을 오릅니다.
             <br> 규격화된 홀드들을 가장 빠르게 오르는 것으로,
-          <br> 완등 시간에 따라 순위를 나누는 종목입니다. </p>
+            <br> 완등 시간에 따라 순위를 나누는 종목입니다. </p>
         </div>
         <div class="Img">
           <img src="assets/images/speed.jpg">
@@ -170,6 +155,39 @@
     </div>
   </div>
 
+  <!-- 강습신청바로가기?-->
+  <div class="main05">
+    <div class="main05-title">
+      지금 바로 시작하세요!
+    </div>
+    <div class="main05-content">
+      <p><input type="button" class="button1" value="강습 프로그램" (click)="moveProgram()" style="cursor:pointer"></p>
+      <p><input type="button" class="button2" value="네이버 톡톡 문의" alt="네이버톡톡" style="cursor:pointer" onclick="location.href='https://talk.naver.com/ct/wchkq0?frm=mnmb&frm=nmb_detail'"></p>
+    </div>
+  </div>
 
-</div>
+<!--  오시는 길-->
+  <div class="main03">
+    <div class="main03-title">
+    <p> 오시는 길</p>
+    </div>
+    <div class="map">
+      <div style="font:normal normal 400 12px/normal dotum, sans-serif; width:1200px; height:532px; color:#333; ">
+        <div style="height: 500px;">
+          <a href="https://map.kakao.com/?urlX=528879.0&amp;urlY=1091645.0&amp;itemId=26214266&amp;q=%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EC%8B%A4%EB%82%B4%EC%95%94%EB%B2%BD%ED%81%B4%EB%9D%BC%EC%9D%B4%EB%B0%8D&amp;srcid=26214266&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
+            <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/39e22b19b1f45aadc95289c135c319fba2c566dcc112e349b8e8ccaed6f3de6b" width="1198px" height="498px" style="border:1px solid #ccc;">
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <h3>성남시 중원구 하대원동 101-28 남영빌딩 4층</h3>
+    <span>
+      <img src="assets/images/mainLocation.png">
+      <p><b>버스 =></b> 31-2 | 31-3 | 57 | 3-3 | 88번 승차 후 <b style="color: red"> 성남동성당</b>에서 하차</p>
+    </span>
+    </div>
+  </div>
+
+
 <app-main-footer></app-main-footer>

@@ -1,105 +1,45 @@
 <app-main-header></app-main-header>
 <div class="container" >
-  <p> notice-detail 컴포넌트 레이아웃 참고하여 만들어도 괜찮을 듯</p>
-  <div class="board">
-    <div class="searchLayout">
-      <input type="text" class="search" placeholder="검색어를 입력하세요">
-      <img src="assets/icon/icon_search.svg">
-    </div>
-    <table class="type01">
-      <thead>
-        <th class="line">NO.</th>
-        <th class="line">제목</th>
-        <th class="line">작성자</th>
-        <th>조회수</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="line">3</td>
-          <td class="line">test 질문 게시글3</td>
-          <td class="line">가우니</td>
-          <td>17</td>
-        </tr>
-        <tr>
-          <td> <input type="button" value="Re" class="re"></td>
-          <td>test 답변글 작성 </td>
-          <td>관리자(iceking8848)</td>
-          <td>25</td>
-        </tr>
-        <tr>
-          <td class="line">2</td>
-          <td class="line">test 질문 게시글2</td>
-          <td class="line">혜리미</td>
-          <td>13</td>
-        </tr>
-        <tr>
-          <td class="line">1</td>
-          <td class="line">test 질문 게시글1</td>
-          <td class="line">창주</td>
-          <td>11</td>
-        </tr>
-      </tbody>
-    </table>
-   <a href="http://localhost:4200/main/notice/detail"> <input type="button" class="button" value="작성"></a>
-    <p> 하단에 페이지네이션 구현 필요 할 듯.</p>
-    <p> OR, 비블럭 페이지 참고하여 필요한 Q&A만 목록으로 정리하여 나열 (목록 추가 필요)</p>
-    <p> Q1. 이용시간이 어떻게 되나요?</p>
-    <p> Q2. 주차나 사용시설이 있나요?</p>
-    <p> Q3. 회원권의 차이는 무엇인가요?</p>
-    <p> Q4. 아이들도 체험이 가능한가요?</p>
-
-
-
-
-
-
-
-
-
-
-
-<!--<p>faq works!</p>-->
-<!--  <p>게시판 형식으로 faq 작성 템플릿</p>-->
-<!--  <p>질문글 작성시 "작성자"는 자율 입력 값으로 설정.</p>-->
-<!--  <p>답변글 작성시에 비밀번호 입력하여 관리자 인증 하도록 설정.</p>-->
-<!--  <br> OR 로그인 페이지 개설하여 url로 접속 가능하도록 설정? 토큰 값 주어서 권한 있을 때만 답변 가능하도록 설정.-->
-<!--  <p> pw: iceking8848 // 비밀번호 오류시 (전체)답변글 작성 버튼 안보이게 설정.</p>-->
-<!--  <p> 누구나 등록 가능하도록 설정.</p>-->
-<!--  <p> 관리자 일 경우, 삭제 가능하도록 설정.</p>-->
-<!--  <p> 글자 수 제한 설정 (min-length)</p>-->
-<!--  <p> db가 연동된 api 가 필요 할 듯..</p>-->
-<!--  <p> localstorage 에 저장하여 템플릿에 출력하는 방법도 가능한가?</p>-->
-
-<!--  <div style="margin-top: 50px; background-color: cornsilk; width: fit-content" >-->
-<!--    <br>-->
-<!--    <p>질문글 작성 형식</p>-->
-<!--    <br>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-<!--    <div>-->
-<!--      작성자 : formControl?-->
-<!--      <br>작성시간 : 현재시간 자동으로 입력되게 설정-->
-<!--      <br>제목 : formControl 사용 or localStorage-->
-<!--      <br>내용 :-->
-<!--      <br>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-<!--      <br>[이미지 첨부]  가능하면 좋을 듯.-->
-<!--      <br>[취소],[완료]버튼 (우측 하단에)-->
-
-<!--    </div>-->
-<!--    <div style="margin-top: 50px; background-color: darksalmon; width: fit-content" >-->
-<!--      <br>-->
-<!--      <p>답변글 작성 형식</p>-->
-<!--      <br>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-<!--      <div>-->
-<!--        작성자 : 관리자 (iceking8848)-->
-<!--        <br>작성시간 : 현재시간 자동으로 입력되게 설정-->
-<!--        <br>제목 : formControl 사용 or localStorage-->
-<!--        <br>내용 :-->
-<!--        <br>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-<!--        <br>[이미지 첨부]  가능하면 좋을 듯.-->
-<!--        <br>[취소],[완료]버튼 (우측 하단에)-->
-
-<!--      </div>-->
-<!--    </div>-->
-<!--</div>-->
+  <p style="font-size: 75px; font-weight: bolder; color:gray;"> Q&A</p>
+  <div class="faqList">
+    <ul>
+      <li>
+        <a (click)="openQ1()">Q1. 이용시간이 어떻게 되나요? <img src="assets/icon/icon_faq-arrow.png" style="float: right" ></a>
+        <p *ngIf="Q1">A.평일: 13시~22시 | 토요일: 13시~18시 까지 운영하며, 그 외 법정 공휴일은 오픈하지 않습니다.</p>
+      </li>
+      <hr>
+      <li>
+        <a (click)="openQ2()">Q2. 주차나 사용시설이 있나요?<img src="assets/icon/icon_faq-arrow.png" style="float: right" ></a>
+        <p *ngIf="Q2"> A. 건물 뒷편에 주차장을 무료로 이용 하시거나 근처에 공영 주차장을 이용하실 수 있습니다.<br>샤워실과 탈의실도 이용하실 수 있으며,수건은 제공하지 않습니다.</p>
+      </li>
+      <hr>
+      <li>
+        <a (click)="openQ3()">Q3. 회원권의 차이는 무엇인가요?<img src="assets/icon/icon_faq-arrow.png" style="float: right" ></a>
+        <p *ngIf="Q3"> A. 자유 이용권은 정해진 기간동안 자유롭게 이용이 가능하며 <br> 강습 회원권은 자유이용권 + 정규 수업 (월 8회) 그룹 강습을 포함합니다.</p>
+      </li>
+      <hr>
+      <li>
+        <a (click)="openQ4()">Q4. 처음 시작할 땐 강습을 꼭 들어야 하나요?<img src="assets/icon/icon_faq-arrow.png" style="float: right" ></a>
+        <p *ngIf="Q4"> A. 기초강습에서는 기초동작과 안전교육을 진행합니다.<br> 기본적인 동작과 안전수칙을 모르시는 경우, 사고 발생의 위험이 있습니다.</p>
+      </li>
+      <hr>
+      <li>
+        <a (click)="openQ5()">Q5. 아이들도 체험이 가능한가요<img src="assets/icon/icon_faq-arrow.png" style="float: right" >?</a>
+        <p *ngIf="Q5"> A.안전상의 이유로 만 10세 이상의 아이들부터 일일체험을 지도하고 있습니다. <br> 체험은 센터 오픈 시간 내 자유롭게 가능하시며 센터의 문의를 통해 예약이 가능합니다.<br> 클라이밍은 아이들의 창의력 발달과 집중력 향상을 도와주는 전신 운동입니다.</p>
+      </li>
+      <hr>
+      <li>
+        <a (click)="openQ6()">Q6. 준비물은 무엇인가요?<img src="assets/icon/icon_faq-arrow.png" style="float: right" ></a>
+        <p *ngIf="Q6"> A.기초 장비인 암벽화는 필수입니다.<br>저희 <span style="color: red">스파이더 클라이밍 센터</span>에서는 1개월간 암벽화를 무료로 대여 해 드리고 있습니다.</p>
+      </li>
+      <hr>
+      <li>
+        <a (click)="openQ7()">Q7. 클라이밍으로 다이어트가 되나요?<img src="assets/icon/icon_faq-arrow.png" style="float: right" ></a>
+        <p *ngIf="Q7"> A. 클라이밍은 전신 근육과 코어를 함께 사용하는 전신운동입니다.<br>클라이밍을 집중해서 운동 할 경우, 시간 당  588㎉의 에너지를 소모하여, 체중감량의 효과도 큽니다. </p>
+<!--        정보 =>https://www.google.com/search?q=%ED%81%B4%EB%9D%BC%EC%9D%B4%EB%B0%8D+%EC%B9%BC%EB%A1%9C%EB%A6%AC&oq=%ED%81%B4%EB%9D%BC%EC%9D%B4%EB%B0%8D+%EC%B9%BC%EB%A1%9C%EB%A6%AC+&aqs=chrome..69i57j0i512j0i5i30.3936j0j7&sourceid=chrome&ie=UTF-8-->
+      </li>
+      <hr>
+    </ul>
   </div>
 </div>
 <app-main-footer></app-main-footer>

@@ -1,7 +1,6 @@
 .container {
   width: 100%;
   height: 60%;
-  //background-color: #e2dedf;
   padding-bottom: 100px;
 }
 
@@ -54,6 +53,8 @@ display: inline-block;
   color: gray;
 }
 .main02-content{
+  max-width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -75,6 +76,7 @@ display: inline-block;
 }
 
 .main03{
+  margin-top: 150px;
   text-align: center;
 }
 
@@ -110,6 +112,50 @@ display: inline-block;
 .Img{
   width: fit-content;
 }
+.main05{
+  margin-top: 150px;
+}
+.main05-title{
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  color: gray;
+  padding-top: 100px;
+}
+.main05-content{
+  padding-top: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+.button1{
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #ffc82d;
+  width: 230px;
+  height: 50px;
+  border: 0.5px solid;
+  color: whitesmoke;
+}
+
+.button2{
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #83dcb7;
+  width: 230px;
+  height: 50px;
+  border: 0.5px solid;
+  color: whitesmoke;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+
 // 강사 모달 css
 .modal{
   //position: absolute !important;

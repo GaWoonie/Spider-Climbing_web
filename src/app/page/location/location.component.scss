@@ -1,0 +1,37 @@
+.location{
+  margin: 0 auto;
+  text-align: center;
+}
+.location-title{
+  font-size: 75px;
+  font-weight: bolder;
+  color:gray;
+}
+.map{
+  display: flex;
+  justify-content: center;
+}
+
+.locationWrap{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+
+}
+
+.location01{
+  margin: 10px;
+  width: 408px
+
+}
+.location02{
+  width: 408px;
+  margin: 10px;
+}
+.location03{
+  width: 408px;
+  margin: 10px;
+}

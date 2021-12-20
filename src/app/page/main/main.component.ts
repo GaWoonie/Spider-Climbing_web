@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {Router, RouterModule, Routes} from '@angular/router';
 
 
 
@@ -20,11 +20,15 @@ export class MainComponent implements OnInit {
   modalLee : boolean |undefined = false;
   modalOh : boolean |undefined = false;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+  moveProgram() {
+    this.router.navigate(['main/program'])
+  }
 
+  //모달 함수
   clickPark() {
     this.modalPark = true;
 }

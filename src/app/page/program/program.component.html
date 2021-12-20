@@ -1,5 +1,10 @@
 <app-main-header></app-main-header>
 <div class="container" >
+  <div class="detailButton">
+    <input type="button" value="평일 강습" style="background-color: #b1d8ff" (click)="moveWeekday()">
+    <input type="button" value="주말 강습"  style="background-color: #dfff7e" (click)="moveWeekend()">
+    <input type="button" value="개인 강습"  style="background-color: #ffdda8" (click)="movePersonal()">
+  </div>
   <div class="program">
     <div class="wrap">
       <div class="program01">

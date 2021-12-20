@@ -14,6 +14,9 @@ import { FacilityComponent } from './page/facility/facility.component';
 import { FaqComponent } from './page/faq/faq.component';
 import { NoticeDetailComponent } from './page/notice-detail/notice-detail.component';
 import { GalleryComponent } from './page/gallery/gallery.component';
+import { PersonalComponent } from './page/program/personal/personal.component';
+import { WeekDayComponent } from './page/program/week-day/week-day.component';
+import { WeekendComponent } from './page/program/weekend/weekend.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { GalleryComponent } from './page/gallery/gallery.component';
     FaqComponent,
     NoticeDetailComponent,
     GalleryComponent,
+    PersonalComponent,
+    WeekDayComponent,
+    WeekendComponent,
   ],
   imports: [
     BrowserModule,

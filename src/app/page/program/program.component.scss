@@ -3,6 +3,8 @@
 }
 
 .program{
+  //margin-top: 30px;
+  //padding-top: 30px;
   //margin-top: 15%;
   //margin-left: 15%;
 }
@@ -33,3 +35,26 @@
   font-weight: bold;
 }
 
+.detailButton{
+//float: right;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.detailButton input{
+  width: 150px;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  //color: whitesmoke;
+  cursor: pointer;
+}
+
+.detailButton input:hover{
+  opacity: 0.5;
+}

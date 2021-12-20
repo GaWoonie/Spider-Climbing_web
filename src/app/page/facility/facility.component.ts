@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./facility.component.scss']
 })
 export class FacilityComponent implements OnInit {
-
+  modal : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  click(){
+    this.modal = true;
+  }
+  closeModal() {
+    this.modal = false;
+  }
 }
