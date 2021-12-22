@@ -17,6 +17,7 @@ import { GalleryComponent } from './page/gallery/gallery.component';
 import { PersonalComponent } from './page/program/personal/personal.component';
 import { WeekDayComponent } from './page/program/week-day/week-day.component';
 import { WeekendComponent } from './page/program/weekend/weekend.component';
+import { HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { WeekendComponent } from './page/program/weekend/weekend.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     CommonModule,
   ],

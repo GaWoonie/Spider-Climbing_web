@@ -23,7 +23,7 @@
         </div>
         <div class="weekend01-content2">
           <img src="assets/images/hong.png" alt="홍신영 강사" style="max-width: 100%; height: auto;">
-          <p style="color: #ffc349; font-size: 30px; font-weight: bolder;">홍신영 강사님</p>
+          <p style="color: #aed5ae; font-size: 30px; font-weight: bolder;">홍신영 강사님</p>
           <div>
             <p> 2003년 클라이밍 입문</p>
             <p> 2006년 유럽 3개국 클라이밍 투어</p>
@@ -45,11 +45,12 @@
         <p style="font-size: 16px; font-weight: bold; color: dimgray"> 초보자,숙련자 관계없이 코칭이 가능한 1:1 개인강습 입니다. </p>
         <p> ////하단에 강습 사진 등 추가 하면 좋을 듯. </p>
       </div>
+    </div>
       <div class="faq">
         <p style="font-size: 50px; font-weight: bolder; color: gray; padding-bottom: 30px;"> Q&A</p>
         <div>
           <div class="question">
-            <p style="color: #b89a00" (click)="openAnswer1()">Q1. 개인강습과 그룹강습의 차이가 무엇인가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
+            <p style="color: #b89a00; cursor: pointer" (click)="openAnswer1()">Q1. 개인강습과 그룹강습의 차이가 무엇인가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
           </div>
           <div class="answer" *ngIf="Q1">
             <p> A. 그룹강습은 최대정원 12명의 강습생들이 함께 운동하는 것 입니다.
@@ -59,7 +60,7 @@
         </div>
         <div>
           <div class="question">
-            <p style="color: #6b9700"  (click)="openAnswer2()">Q2. 강습 시간대는 어떻게 되나요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
+            <p style="color: #6b9700; cursor: pointer"  (click)="openAnswer2()">Q2. 강습 시간대는 어떻게 되나요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
           </div>
           <div class="answer" *ngIf="Q2">
             <p>A. 개인 강습은 정해진 시간대에 운영되고 있지 않습니다.
@@ -69,7 +70,7 @@
         </div>
         <div>
           <div class="question">
-            <p style="color: #00555c" (click)="openAnswer3()">Q3. 커리큘럼은 어떤가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px" ></p>
+            <p style="color: #00555c; cursor: pointer" (click)="openAnswer3()">Q3. 커리큘럼은 어떤가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px" ></p>
           </div>
           <div class="answer" *ngIf="Q3">
             <p>A.<span style="color: red">개인강습</span>은 1:1 맞춤 프로그램 입니다.
@@ -79,5 +80,4 @@
         </div>
       </div>
     </div>
-</div>
 <app-main-footer></app-main-footer>

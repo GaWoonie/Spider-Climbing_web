@@ -104,7 +104,7 @@ export class FaqComponent implements OnInit {
   }
   openQ7(){
     if(this.Q7==false){
-      this.Q1=true
+      this.Q1=false
       this.Q2=false
       this.Q3=false
       this.Q4=false

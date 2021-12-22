@@ -30,6 +30,19 @@ display: inline-block;
   font-weight: bolder;
 }
 
+.main01-title span{
+  text-shadow: 0 1px 0 #CCC,
+  0 2px 0 #CCC,
+  0 3px 0 #CCC,
+  0 4px 0 #CCC,
+  0 5px 0 #CCC,
+  0 6px 0 transparent,
+  0 7px 0 transparent,
+  0 8px 0 transparent,
+  0 9px 0 transparent,
+  0 10px 10px rgba(0, 0, 0, .4);
+}
+
 .main01-content{
   text-align: center;
   font-size: 20px;
@@ -73,6 +86,10 @@ display: inline-block;
 .main02-content img{
   width: fit-content;
   height: auto;
+}
+.main02-content img:hover{
+  opacity: 0.4;
+  cursor: pointer;
 }
 
 .main03{

@@ -16,6 +16,8 @@ export class WeekDayComponent implements OnInit {
   openAnswer1(){
     if(this.Q1==false){
       this.Q1=true;
+      this.Q2=false;
+      this.Q3=false;
     }
     else {
       this.Q1 =false
@@ -23,7 +25,9 @@ export class WeekDayComponent implements OnInit {
   }
   openAnswer2(){
     if(this.Q2==false){
-      this.Q2 = true;
+      this.Q1=false;
+      this.Q2=true;
+      this.Q3=false;
     }
     else{
       this.Q2 = false
@@ -31,7 +35,9 @@ export class WeekDayComponent implements OnInit {
   }
   openAnswer3(){
     if(this.Q3==false){
-      this.Q3 = true
+      this.Q1=false;
+      this.Q2=false;
+      this.Q3=true;
     }
     else {
       this.Q3 = false

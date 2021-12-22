@@ -8,24 +8,24 @@
       INSTRUCTOR
     </div>
     <div class="weekend01-content">
-    <div class="weekend01-content1">
-      <img src="assets/images/lee.jpg" alt="이재형 강사" style="max-width: 100%; height: auto;">
-      <p style="color: #ffc349; font-size: 30px; font-weight: bolder;">이재형 강사님</p>
-      <div>
-        <p> 경력 그런거 없음.</p>
-        <p> 2021.11~ 현 스파이더 실내암벽 강사</p>
+      <div class="weekend01-content1">
+        <img src="assets/images/lee.jpg" alt="이재형 강사" style="max-width: 100%; height: auto;">
+        <p style="color: #aed5ae; font-size: 30px; font-weight: bolder;">이재형 강사님</p>
+        <div>
+          <p> 경력 그런거 없음.</p>
+          <p> 2021.11~ 현 스파이더 실내암벽 강사</p>
+        </div>
       </div>
-    </div>
-    <div class="weekend01-content2">
-      <img src="assets/images/young.png" alt="박용준 강사" style="max-width: 100%; height: auto;">
-      <p style="color: #ffc349; font-size: 30px; font-weight: bolder;">박용준 강사님</p>
-      <div>
-        <p> 2002년 클라이밍 입문</p>
-        <p> 최고난이도 5.12b 등반</p>
-        <p> 2010년 태국 톤사이비치 해벽 등반</p>
-        <p> 2011~ 현 스파이더 실내암벽 강사</p>
+      <div class="weekend01-content2">
+        <img src="assets/images/young.png" alt="박용준 강사" style="max-width: 100%; height: auto;">
+        <p style="color: #ffc349; font-size: 30px; font-weight: bolder;">박용준 강사님</p>
+        <div>
+          <p> 2002년 클라이밍 입문</p>
+          <p> 최고난이도 5.12b 등반</p>
+          <p> 2010년 태국 톤사이비치 해벽 등반</p>
+          <p> 2011~ 현 스파이더 실내암벽 강사</p>
+        </div>
       </div>
-    </div>
     </div>
   </div>
   <div class="weekend02">
@@ -38,41 +38,40 @@
       <p style="font-size: 16px; font-weight: bold; color: dimgray"> 주 2회 정기 강습과 자율운동으로 부족한 점을 채울 수 있습니다.</p>
       <p> ////하단에 강습 상세 시간 추가 하면 좋을 듯. </p>
     </div>
-    <div class="faq">
-      <p style="font-size: 50px; font-weight: bolder; color: gray; padding-bottom: 30px;"> Q&A</p>
-      <div>
-        <div class="question">
-          <p style="color: #b89a00" (click)="openAnswer1()">Q1. 기초반과 초ㆍ중급반의 차이는 무엇인가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
-        </div>
-        <div class="answer" *ngIf="Q1">
-          <p> A. 기초반은 클라이밍을 처음 시작하시는 분에게 권장하는 수업입니다.
-            <br> 초ㆍ중급 반에서는 응용 스킬을 교육합니다.
-            <br> 클라이밍이 처음이시라면, <span style="color: red">기초반</span>을!
-          <br> 심화된 기술을 배우고 싶다면, <span style="color: red">초ㆍ중급반</span>을 추천합니다.</p>
-        </div>
+  </div>
+  <div class="faq">
+    <p style="font-size: 50px; font-weight: bolder; color: gray; padding-bottom: 30px;"> Q&A</p>
+    <div>
+      <div class="question">
+        <p style="color: #b89a00; cursor: pointer" (click)="openAnswer1()">Q1. 기초반과 초ㆍ중급반의 차이는 무엇인가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
       </div>
-      <div>
-        <div class="question">
-          <p style="color: #6b9700"  (click)="openAnswer2()">Q2. 강습 시간대는 어떻게 되나요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
-        </div>
-        <div class="answer" *ngIf="Q2">
-          <p>A. 평일 강습은 강습 시간이 정해져 있습니다.
-            <br>평일 저녁 7시30분을 기점으로 강습이 시작됩니다.
-            <br><span style="color: red">기초반</span>은 1시간이며, <span style="color: red">초ㆍ중급반</span>의 강습시간은 1시간 30분 입니다.
-          </p>
-        </div>
+      <div class="answer" *ngIf="Q1">
+        <p> A. 기초반은 클라이밍을 처음 시작하시는 분에게 권장하는 수업입니다.
+          <br> 초ㆍ중급 반에서는 응용 스킬을 교육합니다.
+          <br> 클라이밍이 처음이시라면, <span style="color: red">기초반</span>을!<br> 심화된 기술을 배우고 싶다면, <span style="color: red">초ㆍ중급반</span>을 추천합니다.</p>
       </div>
-      <div>
-        <div class="question">
-          <p style="color: #00555c" (click)="openAnswer3()">Q3. 커리큘럼은 어떤가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px" ></p>
-        </div>
-        <div class="answer" *ngIf="Q3">
-          <p>A. 저희 <span style="color: red">스파이더 클라이밍</span>은 1:1 맞춤 교육을 진행합니다.
-            <br> 개개인별 수행능력의 차이를 존중하고, 그에 맞는 커리큘럼을 계획합니다.
-            <br><span style="color: red">기초반</span>은 클라이밍에 필수적인 동작들을 교육합니다.
-            <br><span style="color: red">초ㆍ중급반</span>은 심화된 기술을 교육합니다.
-            <br>평일강습은 그룹 수업이지만 정해진 커리큘럼에 맞춰 진행하지 않고, <br>개개인별 커리큘럼에 따라 지도합니다.</p>
-        </div>
+    </div>
+    <div>
+      <div class="question">
+        <p style="color: #6b9700; cursor: pointer"  (click)="openAnswer2()">Q2. 강습 시간대는 어떻게 되나요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px"></p>
+      </div>
+      <div class="answer" *ngIf="Q2">
+        <p>A. 평일 강습은 강습 시간이 정해져 있습니다.
+          <br>평일 저녁 7시30분을 기점으로 강습이 시작됩니다.
+          <br><span style="color: red">기초반</span>은 1시간이며, <span style="color: red">초ㆍ중급반</span>의 강습시간은 1시간 30분 입니다.
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="question">
+        <p style="color: #00555c; cursor: pointer" (click)="openAnswer3()">Q3. 커리큘럼은 어떤가요? <img src="assets/icon/icon_faq-arrow.png" style="padding-left: 30px" ></p>
+      </div>
+      <div class="answer" *ngIf="Q3">
+        <p>A. 저희 <span style="color: red">스파이더 클라이밍</span>은 1:1 맞춤 교육을 진행합니다.
+          <br> 개개인별 수행능력의 차이를 존중하고, 그에 맞는 커리큘럼을 계획합니다.
+          <br><span style="color: red">기초반</span>은 클라이밍에 필수적인 동작들을 교육합니다.
+          <br><span style="color: red">초ㆍ중급반</span>은 심화된 기술을 교육합니다.
+          <br>평일강습은 그룹 수업이지만 정해진 커리큘럼에 맞춰 진행하지 않고, <br>개개인별 커리큘럼에 따라 지도합니다.</p>
       </div>
     </div>
   </div>

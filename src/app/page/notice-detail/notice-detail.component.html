@@ -1,4 +1,41 @@
 <app-main-header></app-main-header>
 <div class="container">
 <p>공지사항 작성/보기 페이지 만들어야 함</p>
+  <div class="table">
+    <table>
+      <tr>
+        <th style="width: 30%; background-color: #b7d278">NO.</th>
+        <td style="width: 20%;border-right: 1px solid">1</td>
+        <th style="width: 30%;background-color: #b7d278">조회수</th>
+        <td style="width: 20%">8848</td>
+      </tr>
+      <tr>
+        <th style="background-color: lightgray">제목</th>
+        <td colspan="3" style="font-weight: bolder">글쓰기 test1234</td>
+      </tr>
+      <tr>
+        <th style="background-color: #b7d278">작성자</th>
+        <td colspan="3">관리자</td>
+      </tr>
+      <tr style="border: none">
+        <th style="background-color: lightgray">작성일자</th>
+        <td colspan="3">2021.12.22 13:38:00</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="notice-content"> 안녕하세요 게시글 상세내용입니다~</td>
+      </tr>
+    </table>
+      <input type="button" value="목록" class="confirm" (click)="moveNotice()">
+
+
+
+  </div>
+<!--  <div class="notice-board">-->
+<!--    <ul>-->
+<!--      <li style="border-bottom: 1px solid; width: 60%; margin: 0 auto"><a>체육관 이용 안내 &nbsp;&nbsp;[<span>관리자</span>]</a></li>-->
+<!--      <li style="border-bottom: 1px solid; width: 60%; margin: 0 auto"><a>2004.01.01부터 체육관 오픈합니다.&nbsp;&nbsp;[<span>관리자</span>]</a></li>-->
+<!--      <li style="border-bottom: 1px solid; width: 60%; margin: 0 auto"><a>Test 작성 게시글1.&nbsp;&nbsp;[<span>관리자</span>]</a></li>-->
+<!--    </ul>-->
+<!--  </div>-->
 </div>
+<app-main-footer></app-main-footer>

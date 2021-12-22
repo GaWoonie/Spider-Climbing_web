@@ -6,7 +6,29 @@
 }
 
 .instructor{
-  border: 1px solid gray;
+  border: 2px solid gray;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.instructor-container{
+  //display: flex;
+  //flex-wrap: wrap;
+  border: 2px solid gray;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.instructor-content{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px
+}
+
+.instructor-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
