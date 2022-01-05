@@ -1,15 +1,16 @@
-.weekend-title{
+.weekday-title{
   font-size: 75px;
   font-weight: bolder;
   color:#81cdd5;
 }
-.weekend01-title{
+.weekday01-title{
   font-size: 50px;
   font-weight: bolder;
   color: gray;
   padding-bottom: 30px;
 }
-.weekend01-content{
+
+.weekday01-content{
   text-align: center;
   padding-bottom: 30px;
   display: flex;
@@ -17,10 +18,10 @@
   flex-wrap: wrap;
   justify-content:center;
 }
-.weekend01-content1{
+.weekday01-content1{
   max-width: 50%;
 }
-.weekend02-title{
+.weekday02-title{
   font-size: 50px;
   font-weight: bolder;
   color: gray;

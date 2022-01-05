@@ -5,6 +5,12 @@
   justify-content: space-evenly;
 }
 
+.instructor-title{
+  font-size: 75px;
+  font-weight: bolder;
+  color:gray;
+}
+
 .instructor{
   border: 2px solid gray;
   text-align: center;
@@ -32,3 +38,12 @@
   flex-wrap: wrap;
   flex-direction: row;
 }
+
+@media (max-width: 850px) {
+  .instructor-title{
+    font-size: 50px !important;
+    font-weight: bolder;
+    color:gray;
+  }
+}
+
